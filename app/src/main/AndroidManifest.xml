@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.madwardrobe">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MADWardrobe"
+        tools:targetApi="31">
+        <activity
+            android:name=".more1"
+            android:exported="false" />
+        <!-- MainActivity: The launcher activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Declaring other activities -->
+        <activity android:name=".ob2" />
+        <activity android:name=".ob1" />
+        <activity android:name=".ob3" />
+        <activity android:name=".signin" />
+        <activity android:name=".signup" />
+        <activity android:name=".home" />
+        <activity android:name=".tryoutfits" />
+        <activity android:name=".more" />
+        <activity android:name=".wishlist" />
+        <activity android:name=".addnewitems" />
+        <activity android:name=".tute" />
+        <activity android:name=".profile" />
+        <activity android:name=".styling" />
+        <activity android:name=".camera" />
+        <activity android:name=".choosephoto" />
+        <activity android:name=".stylingb" /> <!-- Optional: Preloaded fonts metadata -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MAD Wardrobe</string>
+    <string name="forget_password">Forget Password?</string>
+
+    <string name="location">Colombo, Sri Lanka</string>
+    <string name="search_hint">Search</string>
+    <string name="new_collection">New Collection</string>
+    <string name="discount_offer">Discount 50% special offer</string>
+    <string name="closing_in">Closing in: 02 : 12 : 56</string>
+    <string name="category">Category</string>
+    <string name="upgrade_now">Upgrade Now!</string>
+    <string name="you_might_like">You might also like</string>
+    <string name="t_shirt">T-Shirt</string>
+    <string name="pant">Pant</string>
+    <string name="dress">Dress</string>
+    <string name="jacket">Jacket</string>
+    <string name="home">Home</string>
+    <string name="style">Style</string>
+    <string name="more">More</string>
+    <string name="profile">Profile</string>
+
+</resources>

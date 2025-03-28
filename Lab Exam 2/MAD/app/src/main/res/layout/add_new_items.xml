@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".AddItemActivity">
+
+    <!-- Background Card -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="8dp"
+        app:cardBackgroundColor="#FBFBFB"
+        app:cardCornerRadius="20dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+        <ImageView
+            android:id="@+id/imageView32"
+            android:layout_width="480dp"
+            android:layout_height="1015dp"
+            android:src="@drawable/wp12539633_white_and_light_pink_wallpapers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title Text -->
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Add New Item"
+                android:textColor="#161515"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Add Image Button (Plus Icon in Blue Circle) -->
+
+            <!-- Item Image Field -->
+
+            <!-- Item Name Field -->
+
+            <!-- Item Category Dropdown -->
+
+            <!-- Item Color Field -->
+
+            <!-- Item Size Dropdown -->
+
+            <!-- Item Price Field -->
+
+            <!-- Save Button -->
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="320dp"
+                android:layout_height="489dp"
+                android:layout_weight="1"
+                android:src="@drawable/_a38976b6190099a96c4d6c7271767ae" />
+
+            <ImageView
+                android:id="@+id/uploadImageButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/blue_circle"
+                android:contentDescription="Upload Image"
+                android:elevation="8dp"
+                android:src="@drawable/ic_add" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#F86B9A"
+                android:text="Save Item"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

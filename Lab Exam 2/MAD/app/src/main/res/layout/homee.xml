@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF0EE"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Search Bar -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search_bg"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:hint="Search"
+        android:padding="10dp"
+        android:textColor="#101010"
+        android:textColorHint="Black" />
+
+    <!-- Category Tabs -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="All" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Woman" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Man" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:text="Kids" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Promo Banner -->
+
+    <!-- Popular Section -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="256dp"
+        android:layout_marginVertical="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/f1802dd378367536753777d98f0beba7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Popular"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Products Grid -->
+    <GridView
+        android:id="@+id/productGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+</LinearLayout>

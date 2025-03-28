@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WardrobeApp</string>
+    <string name="welcome_message">WELCOME TO YOUR WARDROBE</string>
+    <string name="next">Next</string>
+    <string name="my_closet">My Closet</string>
+</resources>
+

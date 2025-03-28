@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEBEE"
+    android:id="@+id/main"
+    tools:context=".tute">
+
+    <!-- ScrollView to make content scrollable -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Tutorial Title -->
+            <TextView
+                android:id="@+id/tutorialTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="Outfit Color Matching"
+                android:textColor="#161515"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Tutorial Image (Color Wheel) -->
+            <ImageView
+                android:id="@+id/colorWheel"
+                android:layout_width="251dp"
+                android:layout_height="188dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Color Wheel"
+                android:src="@drawable/wheel" />
+
+            <!-- Description Text -->
+            <TextView
+                android:id="@+id/tutorialDescription"
+                android:layout_width="362dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="casual"
+                android:text="To match colors in your outfit, use analogous colors that are next to each other on the color wheel or complementary colors that are opposite one another."
+                android:textAlignment="center"
+                android:textColor="#555"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Image of a person wearing an outfit -->
+
+            <!-- Learn More Button -->
+            <ImageView
+                android:id="@+id/outfitImage"
+                android:layout_width="371dp"
+                android:layout_height="400dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Person Outfit Example"
+                android:src="@drawable/tute1" />
+
+            <Button
+                android:id="@+id/learnMoreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#F86B9A"
+                android:text="LEARN MORE"
+                android:textColor="#FFF" />
+
+            <!-- Next Button -->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="108dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/video"
+                app:tint="#1F1E1E" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#FF6347"
+                android:text="NEXT"
+                android:layout_marginBottom="100dp"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDC0D4"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

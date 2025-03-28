@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">activity display</string>
+    <string name="textView">Answer</string>
+    <string name="btn_back">Back</string>
+</resources>

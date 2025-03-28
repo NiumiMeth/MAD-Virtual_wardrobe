@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="ExtraText">
+    val clothingItem = ClothingItem(
+    id = "1",
+    name = "Red Dress",
+    category = "Formal",
+    imageUrl = "https://example.com/red_dress.jpg",
+    color = "Red",
+    size = "M",
+    brand = "Zara",
+    isFavorite = true
+    )
+</selector>

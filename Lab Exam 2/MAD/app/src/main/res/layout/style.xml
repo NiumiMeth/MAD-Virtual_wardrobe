@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".StylingActivity">
+
+    <!-- Header with the title "Styling" and navigation -->
+
+    <!-- Add Item Buttons Section -->
+
+    <!-- Bottom Navigation Bar -->
+    <LinearLayout
+        android:layout_width="363dp"
+        android:layout_height="746dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <!-- Add Tops Button -->
+
+        <!-- Add Bottoms Button -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_menu" />
+
+            <TextView
+                android:id="@+id/stylingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Styling"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/arrowIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="auto"
+                android:src="@drawable/ic_arrow_right" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/tabIcon1"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_home" />
+
+            <ImageView
+                android:id="@+id/tabIcon2"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_calendar" />
+
+            <ImageView
+                android:id="@+id/tabIcon3"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_styling_selected" />
+
+            <ImageView
+                android:id="@+id/tabIcon4"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_settings" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addTopsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_add_blue_circle"
+            android:drawablePadding="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Add Tops"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/addBottomsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_add_blue_circle"
+            android:drawablePadding="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Add Bottoms"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <!-- Add Footwear Button -->
+        <Button
+            android:id="@+id/addFootwearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@android:color/white"
+            android:drawableLeft="@drawable/ic_add_blue_circle"
+            android:drawablePadding="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Add Footwear"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

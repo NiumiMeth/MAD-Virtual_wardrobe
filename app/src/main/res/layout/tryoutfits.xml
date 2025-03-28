@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#BBADA0"
+    tools:context=".tryoutfits"
+    android:id="@+id/main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="799dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="45dp"
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Choose Me!"
+            android:textAlignment="center"
+            android:textColor="#BD2E5E"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="310dp"
+            android:layout_height="441dp"
+            android:layout_gravity="center_horizontal"
+            android:adjustViewBounds="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/model_placeholder" />
+
+        <TextView
+            android:layout_width="395dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Niumi"
+            android:textColor="#0D0C0C"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="389dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+
+            android:text="Niumi is 170 cm tall and usually wears L."
+            android:textColor="#450707"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="379dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#A0522D"
+            android:text="Choose"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="411dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="4dp"
+        android:background="#FDC0D4"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</LinearLayout>
