@@ -15,7 +15,7 @@ I was responsible for designing the intuitive and visually appealing interface f
 - UI/UX Design
 
 ## GitHub Repository
-[Wardrobe & Styling App](https://github.com/NiumiMeth/MAD-Wardrobe_App.git)
+[Wardrobe & Styling App](https://github.com/NiumiMeth/MAD-Wardrobe.git)
 
 ## Installation
 1. Clone the repository:
